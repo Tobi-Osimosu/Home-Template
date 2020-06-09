@@ -10,8 +10,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.landing-page {
+.container{
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+main{
   position: relative;
+
+}
+
+.landing-page {
+  /* position: relative; */
   height: 100vh;
   background-image: url(assets/img/Rectangle4.png);
   background-repeat: no-repeat;
@@ -22,14 +32,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          align-items: center;
+          flex-direction: column;
 }
 
 .landing-page .welcome {
-  position: absolute;
+  /* position: absolute; */
   width: 479px;
   height: 192px;
-  left: 480px;
-  top: 254px;
+  /* left: 480px;
+  top: 254px; */
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -46,10 +58,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  /* position: relative; */
   height: 55vh;
-  padding-left: 140px;
-  padding-right: 140px;
   padding-top: 128px;
 }
 
@@ -97,6 +107,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+      align-items: center;
   width: 250px;
   height: 250px;
   background: #ffffff;
@@ -114,18 +125,23 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-left: 48px;
-  padding-right: 48px;
+      flex-direction: column;
+      align-items: center;
+      word-wrap: break-word;
+      padding: 10px;
+      margin-top: 60px;
+  /* padding-left: 48px;
+  padding-right: 48px; */
 }
 
 .services .services-items .services-item-content .services-item-icon {
-  position: absolute;
-  top: 75px;
+  /* position: absolute;
+  top: 75px; */
 }
 
 .services .services-items .services-item-content .services-item-text {
-  position: relative;
-  top: 149px;
+  /* position: relative;
+  top: 149px; */
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -193,10 +209,8 @@ body {
 }
 
 .room-suites {
-  position: relative;
+  /* position: relative; */
   height: 83vh;
-  padding-left: 140px;
-  padding-right: 140px;
 }
 
 .room-suites .header {
@@ -208,6 +222,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+      align-items: center;
 }
 
 .room-suites .header .header-text {
@@ -313,13 +328,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  /* position: relative; */
   height: 65vh;
-  padding-left: 140px;
-  padding-right: 140px;
 }
 
 .upcoming-event .header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,19 +373,23 @@ body {
   background-size: cover;
   height: 350px;
   width: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .upcoming-event .upcoming-events .upcoming-event-content-1 .upcoming-event-text {
-  position: absolute;
+  /* position: absolute; */
   width: 270px;
   height: 70px;
-  left: 24px;
-  top: 240px;
+  /* left: 24px;
+  top: 240px; */
   font-style: normal;
   font-weight: 500;
   font-size: 23px;
   line-height: 34px;
   color: #ffffff;
+    margin-left: 10px;
 }
 
 .upcoming-event .upcoming-events .upcoming-event-content-2 {
@@ -380,19 +398,25 @@ body {
   background-size: cover;
   height: 350px;
   width: 350px;
+  display: flex;
+  justify-content: flex-start;
+
+
+  align-items: flex-end;
 }
 
 .upcoming-event .upcoming-events .upcoming-event-content-2 .upcoming-event-text {
-  position: absolute;
+  /* position: absolute; */
   width: 281px;
   height: 70px;
-  left: 430px;
-  top: 240px;
+  /* left: 430px;
+  top: 240px; */
   font-style: normal;
   font-weight: 500;
   font-size: 23px;
   line-height: 34px;
   color: #ffffff;
+    margin-left: 10px;
 }
 
 .upcoming-event .upcoming-events .upcoming-event-content-3 {
@@ -401,19 +425,23 @@ body {
   background-size: cover;
   height: 350px;
   width: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .upcoming-event .upcoming-events .upcoming-event-content-3 .upcoming-event-text {
-  position: absolute;
+  /* position: absolute; */
   width: 270px;
   height: 70px;
-  left: 820px;
-  top: 240px;
+  /* left: 820px;
+  top: 240px; */
   font-style: normal;
   font-weight: 500;
   font-size: 23px;
   line-height: 34px;
   color: #ffffff;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -460,10 +488,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+          justify-content: center;
+          align-items: center;
+  /* position: relative; */
   height: 90vh;
-  padding-left: 140px;
-  padding-right: 140px;
+  width: 100%;
 }
 
 .testimonials .header {
@@ -498,7 +527,7 @@ body {
 
 .testimonials .testimonials-container .testimonial {
   position: relative;
-  height: 588px;
+  /* height: 588px; */
   background: url(assets/img/testimonial-bg.png);
   background-repeat: no-repeat;
   width: 432.98px;
@@ -713,7 +742,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  /* position: relative; */
   height: 45vh;
   padding-left: 324px;
   padding-right: 324px;
@@ -827,7 +856,7 @@ body {
 }
 
 .partners {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   padding-left: 143px;
   padding-right: 143px;
@@ -866,6 +895,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+      align-items: center;
 }
 
 .partners .partners-show .partner1 {
@@ -927,4 +957,329 @@ body {
     height: 42.26px;
   }
 }
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .landing-page .welcome{
+    width: 300px;
+    font-size: 3.8rem;
+  }
+.services .services-items{
+ flex-direction: column;
+ margin-left: 30px;
+}
+
+.services .services-items .services-item{
+  min-width: 250px;
+}
+
+.services .services-items .services-item:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.room-suites{
+  margin-top: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.room-suites .room-suites-images {
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: repeat(3,300px);
+      grid-template-rows: repeat(3,300px);
+  grid-gap: 40px;
+}
+
+.room-suites .room-suites-images .room-suite-item-1 {
+
+  -ms-grid-row: unset;
+  -ms-grid-row-span: unset;
+  grid-row: unset;
+
+}
+
+.upcoming-event .header {
+  margin-top: -140px;
+}
+
+.upcoming-event{
+  margin-top: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upcoming-event .upcoming-events{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: repeat(3,300px);
+      grid-template-rows: repeat(3,300px);
+  grid-gap: 40px;
+  margin-left: 20px;
+  margin-top: 300px;
+}
+
+.upcoming-event .upcoming-events .events{
+  width: unset;
+  height: unset;
+}
+
+.testimonials {
+  margin-top: 500px;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .testimonials-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -60px;
+  /* -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: repeat(2,300px);
+      grid-template-rows: repeat(2,300px);
+  grid-gap: 40px; */
+}
+
+.testimonials .testimonials-container .testimonial{
+  width: 300px;
+  height: 350px;
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testimonials .testimonials-container .testimonial .testimonial-text{
+  /* width: 100%; */
+  font-size: 0.9rem;
+  width: 250px;
+  margin: -4px 0 0 -15px;
+}
+
+.testimonials .testimonials-container .testimonial .testimonial-name{
+  font-size: 1.1rem;
+  width: 120px;
+  margin-left: -60px;
+}
+
+.testimonials .testimonials-container .testimonial .testimonial-avatar {
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  left: 170px;
+  top: 20px;
+}
+
+
+.testimonials .testimonial-map{
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  left: 10px;
+  top: 50px;
+}
+
+
+.testimonials .testimonial-map .map-avatar1 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 50px;
+  height: 50px;
+  left: 12px;
+  top: 159px;
+}
+.testimonials .testimonial-map .map-avatar2 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 60px;
+  height: 60px;
+  left: 70px;
+  top: 225px;
+}
+.testimonials .testimonial-map .map-avatar3 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 55px;
+  height: 55px;
+  left: 150px;
+  top: 159px;
+}
+.testimonials .testimonial-map .map-avatar4 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 50px;
+  height: 50px;
+  left: 150px;
+  top: 300px;
+}
+.testimonials .testimonial-map .map-avatar5 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 55px;
+  height: 55px;
+  left: 250px;
+  top: 200px;
+}
+.enjoy-best-deals{
+    margin-top: -50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.enjoy-best-deals .enjoy-content .enjoy-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.enjoy-best-deals .enjoy-content .enjoy-form .submit-btn{
+  margin-top: 20px;
+}
+
+.partners{
+    margin-top: 150px;
+    padding-left: 0;
+    padding-right: 0;
+    /* width: 100%; */
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.partners .header .header-text{
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.partners-show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+
+.partners .partners-show .partner1 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 150px;
+  height: 63.83px;
+  margin-right: 0;
+}
+
+.partners .partners-show .partner2 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 150px;
+  height: 62.8px;
+  margin-right: 0;
+}
+
+.partners .partners-show .partner3 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  width: 150px;
+  height: 56.23px;
+  margin-right: 0;
+}
+
+.partners .partners-show .partner4 {
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+  wwidth: 150px;
+  height: 58.26px;
+  margin-right: 0;
+}
+}
+
+
+/*
+weird phones like pixel2 iphone 6,7,8 with screen size between 411 and 414
+
+*/
+
+@media (min-width: 411px) and (max-width: 440px) {
+
+  .services .services-items{
+   margin-left: 60px;
+  }
+
+  .room-suites {
+    margin-top: 1400px;
+  }
+
+  .upcoming-event .upcoming-events{
+     margin-left: 70px;
+
+  }
+
+}
+
+
+
+/***
+  Iphone5
+*/
+
+@media screen and (device-aspect-ratio: 40/71) {
+
+
+}
+
+/***
+  Iphone6
+*/
+
+@media screen and (device-aspect-ratio: 375/667) {
+
+
+
+}
+
 /*# sourceMappingURL=home.css.map */
